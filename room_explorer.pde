@@ -127,15 +127,15 @@ void setup() {
   // Infinite door! Goes back to same room on other side
   rooms[0].doors[2] = rooms[0].new Door(rooms[0].width, 1, Y_DOOR_TYPE, 0, 1);
 
-  rooms[1] = new Room("idx 1", 5, 5);
+  rooms[1] = new Room("idx 1", 3, 3);
   rooms[1].doors[0] = rooms[1].new Door(1, rooms[1].length, X_DOOR_TYPE, 0, 0);
   rooms[1].doors[1] = rooms[1].new Door(0, rooms[1].length-2, Y_DOOR_TYPE, 2, 1);
 
-  rooms[2] = new Room("idx 2", 5, 5);
+  rooms[2] = new Room("idx 2", 5, 10);
   rooms[2].doors[0] = rooms[1].new Door(rooms[2].width-2, rooms[2].length, X_DOOR_TYPE, 3, 0);
   rooms[2].doors[1] = rooms[1].new Door(rooms[2].width, rooms[2].length-2, Y_DOOR_TYPE, 1, 1);
 
-  rooms[3] = new Room("idx 3", 5, 5);
+  rooms[3] = new Room("idx 3", 10, 5);
   rooms[3].doors[0] = rooms[1].new Door(rooms[3].width-2, 0, X_DOOR_TYPE, 2, 0);
   rooms[3].doors[1] = rooms[1].new Door(rooms[3].width, 1, Y_DOOR_TYPE, 0, 1);
 
